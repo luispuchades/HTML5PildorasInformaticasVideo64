@@ -198,11 +198,13 @@ header {
 
 
 #zona-progreso, #zona-porcentaje {
-    background: lightblue;
-    border: 2px dashed #0000ff;
-    color: darkslateblue;
+/*    background: white;*/
+    border: 2px dashed #0a0278;
+    border-radius: 0.2em;
+    color: #0a0278;
     display: inline-block;
-    font-size: 18px;
+    font-size: 24px;
+    font-weight: bold;
     margin-left: auto;
     min-width: 190px;
     max-width: 95%;
