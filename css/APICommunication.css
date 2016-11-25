@@ -64,22 +64,6 @@ header {
     text-align: center;
 }
 
-#zona-progreso {
-    background: lightblue;
-    border: 2px dashed #0000ff;
-    display: inline-block;
-    font-size: 36px;
-    margin-left: auto;
-    min-width: 190px;
-    max-width: 95%;
-/*    overflow-x: hidden;*/
-/*    overflow-y: auto;*/
-        padding: 20px;
-    text-align: center;
-    vertical-align: bottom;
-    word-wrap: break-word;
-    width: 73%;
-}
 
 /** Ocultamos el botón input type "file" para evitar tener que
 * ajustarnos a las rigidezes de diseño de este botón. En su
@@ -170,7 +154,7 @@ header {
     max-width: 73%;
     overflow-x: hidden;
     overflow-y: auto;
-    text-align: left;
+    text-align: center;
     vertical-align: top;
     word-wrap: break-word;
     width: 73%;
@@ -210,6 +194,27 @@ header {
     font-size: 1em;
     font-weight: bold;
 }
+
+
+
+#zona-progreso, #zona-porcentaje {
+    background: lightblue;
+    border: 2px dashed #0000ff;
+    color: darkslateblue;
+    display: inline-block;
+    font-size: 18px;
+    margin-left: auto;
+    min-width: 190px;
+    max-width: 95%;
+/*    overflow-x: hidden;*/
+/*    overflow-y: auto;*/
+        padding: 20px;
+    text-align: center;
+    vertical-align: bottom;
+    word-wrap: break-word;
+    width: 73%;
+}
+
 
 .directorio {
     color: #0000FF;

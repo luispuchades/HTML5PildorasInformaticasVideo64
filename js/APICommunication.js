@@ -14,12 +14,13 @@
 var zonaDatos;
 var botonLeerFichero;
 var zonaProgreso;
+var zonaPorcentaje;
 
 //1.1 Extracción de elementos desde HTML
 zonaDatos = document.getElementById("zona-datos");
 botonLeerFichero = document.getElementById("boton-leer-fichero");
 zonaProgreso = document.getElementById("zona-progreso");
-
+zonaPorcentaje = document.getElementById("zona-porcentaje");
 
 //2. Definición de Funciones
 
@@ -28,7 +29,7 @@ zonaProgreso = document.getElementById("zona-progreso");
 function comenzarBarra() {
     "use strict";
 
-    zonaDatos.innerHTML = "<progress value = '0' max = '100'></progress>";
+    zonaProgreso.innerHTML = "<progress value = '0' max = '100'></progress>";
 }
 
 
@@ -44,12 +45,7 @@ function estadoBarra(e) {
 
     barraProgreso.value = porcentaje;
 
-    zonaProgreso.innerHTML = porcentaje + " %";
-
-
-
-
-
+    zonaPorcentaje.innerHTML = porcentaje + " %";
 }
 
 
@@ -61,7 +57,7 @@ function mostrarContenido() {
 // por el objeto creado con el constructor y que se
 // ha abierto con open y le pedimos que lo haga en
 // formato texto con responseText
-    zonaDatos.innerHTML = "Archivo leido.";
+    zonaProgreso.innerHTML = "Archivo leido.";
 }
 
 
